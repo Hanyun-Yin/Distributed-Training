@@ -1,0 +1,15 @@
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+ deepspeed_config_file: ./config_file/ds.json
+ zero3_init_flag: true
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+dynamo_backend: 'NO'
+fsdp_config: {}
+machine_rank: 0
+megatron_lm_config: {}
+num_machines: 1
+num_processes: 4
+rdzv_backend: static
+same_network: true
+use_cpu: false
